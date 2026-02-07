@@ -706,7 +706,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Authorization\nRequest",
+              "name": "Verification\nRequest",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -720,7 +720,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Authorization\nRequest"
+              "Verification\nRequest"
             ],
             "id": "6cdc26ee-5d70-4118-ad73-577f1bf7942c",
             "source": {
@@ -758,7 +758,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Authorization\nResponse",
+              "name": "Verification\nResponse",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -772,7 +772,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Authorization\nResponse"
+              "Verification\nResponse"
             ],
             "id": "df98f8f3-b939-4e51-bf5c-0182fd9726c3",
             "source": {
@@ -1200,6 +1200,11 @@
             ],
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
