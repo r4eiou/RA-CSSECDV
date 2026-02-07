@@ -28,7 +28,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Browser"
+                "text": "Browser\nClient"
               },
               "body": {
                 "stroke": "#333333",
@@ -124,7 +124,7 @@
             "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Browser",
+              "name": "Browser\nClient",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -136,8 +136,8 @@
           },
           {
             "position": {
-              "x": 279.99999999999994,
-              "y": 150
+              "x": 280,
+              "y": 160
             },
             "size": {
               "width": 100,
@@ -274,7 +274,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Authentication\nStatus",
+              "name": "Authentication\nResult",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -288,7 +288,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Authentication\nStatus"
+              "Authentication\nResult"
             ],
             "id": "bb896847-4aa8-4b33-9750-63955a4d9f22",
             "source": {
@@ -326,7 +326,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "User \nAuthentication\n",
+              "name": "User\nCredentials",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -340,7 +340,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "User \nAuthentication\n"
+              "User\nCredentials"
             ],
             "id": "06dc627f-fa22-432b-839b-02fae0838a66",
             "source": {
@@ -353,8 +353,8 @@
             },
             "vertices": [
               {
-                "x": 260,
-                "y": 90
+                "x": 250,
+                "y": 80
               }
             ]
           },
@@ -378,7 +378,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Auth\nVerification",
+              "name": "Authentication\nRequest",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -392,7 +392,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Auth\nVerificatio"
+              "Auth\nVerifi"
             ],
             "id": "c9f05f4b-71d6-4996-a143-b9ed29383d13",
             "source": {
@@ -412,97 +412,7 @@
                 "x": 480,
                 "y": 250
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -524,7 +434,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Verified\n",
+              "name": "Authentication\nResponse",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -538,7 +448,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Verified\n"
+              "Authentication\nResponse"
             ],
             "id": "25ee7f2a-3d0b-4b85-a448-1c0243a6ec68",
             "source": {
@@ -576,7 +486,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Verification\nRequest",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -590,9 +500,61 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Verification\nRequest"
             ],
-            "id": "26fc853a-e2e5-41b2-b9fc-e3250d50460e",
+            "id": "04c4243e-1baf-483f-96d8-63c0810743c6",
+            "source": {
+              "x": 560,
+              "y": 340
+            },
+            "target": {
+              "cell": "51630b44-e10d-4f65-b56c-bf9db90d1403",
+              "port": "5f4efc79-3136-41c0-9092-3520a2546576"
+            },
+            "vertices": [
+              {
+                "x": 630,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Verification\nResponse",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Verification\nResponse"
+            ],
+            "id": "4566dd51-2b78-4443-a754-8fde4bb45afb",
             "source": {
               "cell": "51630b44-e10d-4f65-b56c-bf9db90d1403",
               "port": "6383eaf2-56c3-4c40-b811-7cfa5035499f"
@@ -603,19 +565,127 @@
             },
             "vertices": [
               {
-                "x": 630,
-                "y": 440
+                "x": 600,
+                "y": 490
               },
               {
-                "x": 570,
-                "y": 460
+                "x": 540,
+                "y": 490
+              },
+              {
+                "x": 500,
+                "y": 430
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Feedback\nData",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Feedback\nData"
+            ],
+            "id": "41465980-fb6f-47e5-b3ea-fbabb9f8d39a",
+            "source": {
+              "cell": "294a74d8-0273-4a7f-85ee-9b11dd1ee307",
+              "port": "6383eaf2-56c3-4c40-b811-7cfa5035499f"
+            },
+            "target": {
+              "cell": "f5ab093a-1bda-4ccf-b219-6dfccd48603b",
+              "port": "ac7cd491-e409-4b81-a9df-98dd20d5a8e6"
+            },
+            "vertices": [
+              {
+                "x": 170,
+                "y": 240
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Write\nStatus",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Write\nStatus"
+            ],
+            "id": "0a97961c-601e-416c-b3b9-4e2958071124",
+            "source": {
+              "cell": "f5ab093a-1bda-4ccf-b219-6dfccd48603b",
+              "port": "ac7cd491-e409-4b81-a9df-98dd20d5a8e6"
+            },
+            "target": {
+              "cell": "294a74d8-0273-4a7f-85ee-9b11dd1ee307",
+              "port": "9a67e4ec-8d9f-43e9-8471-18ee3e903579"
+            },
+            "vertices": [
+              {
+                "x": 250,
+                "y": 310
               }
             ]
           },
           {
             "position": {
-              "x": 110,
-              "y": 330
+              "x": 60,
+              "y": 350
             },
             "size": {
               "width": 120,
@@ -738,8 +808,8 @@
           },
           {
             "position": {
-              "x": 660,
-              "y": 380
+              "x": 640,
+              "y": 430
             },
             "size": {
               "width": 80,
