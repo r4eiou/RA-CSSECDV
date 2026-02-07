@@ -1280,13 +1280,19 @@
             ],
             "id": "0ad16961-21cc-4835-9a6c-4f68f548b6d6",
             "source": {
-              "x": 940,
+              "x": 960,
               "y": 720
             },
             "target": {
-              "x": 1130,
-              "y": 470
-            }
+              "x": 1170,
+              "y": 510
+            },
+            "vertices": [
+              {
+                "x": 1030,
+                "y": 580
+              }
+            ]
           }
         ],
         "description": "Threat Modeling: Data Flow Diagram"
